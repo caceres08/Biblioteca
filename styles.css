@@ -1,0 +1,166 @@
+/* Estilo General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar scroll horizontal */
+  }
+  
+  /* Contenedor de Login */
+  .login-container {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px auto;
+    width: 300px;
+  }
+  
+  .login-container input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dashboard */
+  .hidden {
+    display: none;
+  }
+  
+  #dashboard {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  /* Header y Estadísticas */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .statistics {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .stat {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  /* Tabla */
+  table {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .remove-btn, .toggle-status-btn {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    color: white;
+    background-color: #dc3545;
+    cursor: pointer;
+  }
+  
+  .toggle-status-btn {
+    background-color: #28a745;
+  }
+  
+  .remove-btn:hover, .toggle-status-btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Ajustes para la tabla con paginación */
+  .dataTables_wrapper {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  table.dataTable {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  table.dataTable thead th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  table.dataTable tbody tr {
+    background-color: white;
+  }
+  
+  /* Estilo de la paginación */
+  .dataTables_paginate {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .dataTables_paginate a {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dataTables_paginate a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hacer que solo la tabla se mueva con scroll */
+  .dataTables_scrollBody {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  /* Agregar scroll global en toda la página */
+  html, body {
+    height: 100%;
+  }
+  
+  #dashboard {
+    height: auto;
+    overflow-y: auto; /* Habilitar scroll vertical en la página */
+  }
+  

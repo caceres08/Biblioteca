@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ince Digital Library</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"
+  />
+</head>
+<body>
+  <div id="login-section" class="login-container">
+    <h1>Iniciar Sesión - Administrador</h1>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+  <div id="dashboard" class="hidden">
+    <header>
+      <h1>INCE DIGITAL LIBRARY</h1>
+      <button id="logout-btn">Cerrar Sesión</button>
+    </header>
+
+    <div class="statistics">
+      <div class="stat">Total Libros: <span id="total-books">0</span></div>
+      <div class="stat">Libros Prestados: <span id="borrowed-books">0</span></div>
+      <div class="stat">Libros Disponibles: <span id="available-books">0</span></div>
+    </div>
+
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Título del libro" required />
+      <input type="text" id="author" placeholder="Autor" required />
+      <input type="text" id="subject" placeholder="Materia del libro" required /> <!-- Nueva funcionalidad -->
+      <select id="status">
+        <option value="disponible">Disponible</option>
+        <option value="prestado">Prestado</option>
+      </select>
+      <button type="submit">Agregar Libro</button>
+    </form>
+
+    <table id="book-table" class="display">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Materia</th> <!-- Nueva columna -->
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>
